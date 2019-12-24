@@ -39,7 +39,7 @@ while True:
             i = cv2.getTrackbarPos('High', 'control')
             j = cv2.getTrackbarPos('Low','control')
 
-            threshold_img = rescale1(raw, i, j)
+            threshold_img = rescale(raw, i, j)
             cv2.imshow('control', threshold_img)
 
         else:
